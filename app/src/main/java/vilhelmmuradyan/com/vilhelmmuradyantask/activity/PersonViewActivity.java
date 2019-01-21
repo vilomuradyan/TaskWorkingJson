@@ -2,6 +2,7 @@ package vilhelmmuradyan.com.vilhelmmuradyantask.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.squareup.picasso.Picasso;
@@ -14,6 +15,8 @@ public class PersonViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_person_view);
+        Toolbar toolbar = findViewById(R.id.tool_bar_person);
+        setSupportActionBar(toolbar);
         ImageView imgPerson = findViewById(R.id.img_person);
         TextView txtName = findViewById(R.id.txt_name);
         TextView txtAge = findViewById(R.id.txt_age);

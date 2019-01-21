@@ -6,10 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".activity.PersonViewActivity">
 
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar_person"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
 
     <ImageView
         android:id="@+id/img_person"
-        android:layout_width="0dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -17,7 +32,7 @@
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout_person"
         app:srcCompat="@mipmap/ic_launcher_round"
         tools:ignore="ContentDescription" />
 
