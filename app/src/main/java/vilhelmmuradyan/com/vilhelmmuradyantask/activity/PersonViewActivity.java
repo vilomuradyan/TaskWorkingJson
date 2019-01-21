@@ -17,6 +17,10 @@ public class PersonViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_person_view);
         Toolbar toolbar = findViewById(R.id.tool_bar_person);
         setSupportActionBar(toolbar);
+
+        assert getSupportActionBar() != null;
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         ImageView imgPerson = findViewById(R.id.img_person);
         TextView txtName = findViewById(R.id.txt_name);
         TextView txtAge = findViewById(R.id.txt_age);
